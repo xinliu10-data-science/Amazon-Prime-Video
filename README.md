@@ -5,3 +5,6 @@ When a user opens the homepage for Amazon Prime Video, he/she will probably end 
 <p align="center">
 <img src="Amazon%20Prime%20Movie.png" width="500">
 </p>
+
+There is no easy answer for this question. In this project, we will build a prediction model to predict whether a movie is going to perform well (measured by cumulative time viewed by audiences per day) on the Amazon Prime Video platform. The analysis is based on a dataset with 4000+ rows and 16 columns. 
+
