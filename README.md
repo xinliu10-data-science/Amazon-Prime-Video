@@ -1,5 +1,8 @@
 # Predictive Analytics of Amazon Prime Movies
 
+Project Description
+----------------------
+
 When a user opens the homepage for Amazon Prime Video, he/she will probably end up seeing a page that looks like this. But have you ever wondered, what are the most important characteristics of a movie that make people spend more time on it? Is it the genre? Is it the language of the movie? Or even the position of the movie on the webpage? 
 
 <p align="center">
@@ -28,6 +31,12 @@ Star_cateogry	:	A score to measure how popular the actor/actress are associated 
 
 [Add a link to the notebook]
 
+Main Challenges and Investigations
+----------------------------------
+### Handling of Missing Data
+One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data, and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. 
+
+There are two types of missing data: _*informative* and _*non-informative*. The first category 
 
 
 
