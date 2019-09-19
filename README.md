@@ -74,9 +74,9 @@ IV. Business Insights and Discussion
 The feature importance were extracted from the best RF model. 
 1) Both 'weighted_categorical_position' and 'weighted_horizontal_position' are two strongest predictors in this model. The finding is in agreement with the critial finding about 'The Golden Triangle' that Google announced toward its universal search model on Aug. 17, 2007 (Source: Enquiro Research, Aug. 17, 2007). The 'Golden Triangle' is a distinct area of intense eye scan activity that is shown in the figure below. 
 
-<p align="center">
-<img src="The%20Golden%20Triangle.PNG" width="700">
-</p>
+   <p align="center">
+   <img src="The%20Golden%20Triangle.PNG" width="700">
+   </p>
 
    If we assume that the movies that are closer to the golden triangle have a better chance of being clicked/watched by users, it is not    hard to understand that the position of a movie will largely impact the performance of the movie on the platform. So if the company      have picked movies to promote, the position of those movies shown on the webpage is something cruicial to think about. The optimized    positions of movies can be tested via A/B testing. 
 
