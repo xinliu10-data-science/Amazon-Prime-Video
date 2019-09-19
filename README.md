@@ -60,14 +60,16 @@ _**Release year**_: The release year of movie varies through a wide range (1916-
 
 After the feature engineering step, the feature space holded 4226 observations and 58 features in total, and with no null data. The dataset was scaled using standard scaler before training. 
 
-### Model Training and Evaluation 
+Model Training and Evaluation 
+-----------------------------
 The metric to predict (cumulative time viewed by audiences per day) is continuous, so regularized linear models (LASSO linear regression, Ridge linear regression) and non-linear model (random forest regression) were implemented and evalualted. 5 models were compared using coefficient R^2, mean squared error (MSE) and root mean squared error (RMSE). 
 
 A majority of the effort was to inrease the model performance. The baseline model (LASSO linear regression) only generated R^2 score of 0.36457853303. 
 
 Random forest tree regressor generates the best prediction accurarcy (R^2 score of 0.50839320352), with best parameters n_estimators=14 and max_depth=55. 
 
-### Business Insights and Discussion
+Business Insights and Discussion
+--------------------------------
 
 
 
