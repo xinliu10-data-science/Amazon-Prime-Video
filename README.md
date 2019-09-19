@@ -71,7 +71,8 @@ Random forest tree regressor generates the best prediction accurarcy (R<sup>2</s
 Business Insights and Discussion
 --------------------------------
 
-
+The feature importance were extracted from the best RF model. 
+1) Both 'weighted_categorical_position' and 'weighted_horizontal_poition' are strong predictors. 
 
 
 
