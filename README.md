@@ -1,6 +1,6 @@
 # Predictive Analytics of Amazon Prime Movies
 
-Project Description
+I. Project Description
 ----------------------
 
 When a user opens the homepage for Amazon Prime Video, he/she will probably end up seeing a page that looks like this. But have you ever wondered, what are the most important characteristics of a movie that make people spend more time on it? Is it the genre? Is it the language of the movie? Or even the position of the movie on the webpage? 
@@ -31,7 +31,7 @@ Star_cateogry	:	A score to measure how popular the actor/actress are associated 
 
 [Add a link to the notebook]
 
-Main Challenges and Investigations
+II. Main Challenges and Investigations
 ----------------------------------
 ### Handling of Missing Data
 One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data, and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. There are 3242 samples have at least one missing data.
@@ -60,7 +60,7 @@ _**Release year**_: The release year of movie varies through a wide range (1916-
 
 After the feature engineering step, the feature space holded 4226 observations and 58 features in total, and with no null data. The dataset was scaled using standard scaler before training. 
 
-Model Training and Evaluation 
+III. Model Training and Evaluation 
 -----------------------------
 The metric to predict (cumulative time viewed by audiences per day) is continuous, so regularized linear models (LASSO linear regression, Ridge linear regression) and non-linear model (random forest regression) were implemented and evalualted. 5 models were compared using coefficient R<sup>2</sup>, mean squared error (MSE) and root mean squared error (RMSE). 
 
@@ -68,7 +68,7 @@ A majority of the effort was to inrease the model performance. The baseline mode
 
 Random forest tree regressor generates the best prediction accurarcy (R<sup>2</sup> score of 0.50839320352), with best parameters n_estimators=14 and max_depth=55. 
 
-Business Insights and Discussion
+IV. Business Insights and Discussion
 --------------------------------
 
 The feature importance were extracted from the best RF model. 
