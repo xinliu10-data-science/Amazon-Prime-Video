@@ -78,7 +78,7 @@ The feature importance were extracted from the best RF model.
 <img src="The%20Golden%20Triangle.PNG" width="700">
 </p>
 
-  If we assume that the movies that are closer to the golden triangle have a better chance of being clicked/watched by users, it is not   hard to understand that the position of a movie will largely impact the performance of the movie on the platform. So if the company     have picked movies to promote, the position of those movies shown on the webpage is something cruicial to think about. The optimized     positions of movies can be tested via A/B testing. 
+   If we assume that the movies that are closer to the golden triangle have a better chance of being clicked/watched by users, it is not    hard to understand that the position of a movie will largely impact the performance of the movie on the platform. So if the company      have picked movies to promote, the position of those movies shown on the webpage is something cruicial to think about. The optimized    positions of movies can be tested via A/B testing. 
 
 2) The third strong predictor is 'imdb_votes'. This is expected and straight-forward as votes reflect the popularity of a movie and the more popular the movie is, the better performance one can expect for the movie. 
 
