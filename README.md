@@ -48,6 +48,28 @@ We usually don't want to fill in informative missing data with a mean or a media
 Though the above discussion, I assume the missing data in this project is non-informative and for all 6 features with missing data, their corresponding mean values were imputated to replace missing entries. 
 
 ### Feature Engineering 
+Two categorical features caught my attention: _**genres**_ and _**release_year**_. 
+
+_**Genres**_: In the original 'genres' column, some movies have more than one genre listed, separated by comma. First thing I did was splitting the genres and plotted the number of movies belong to each individual genre. This helped me understand the impact of each individual genre. 
+ 
+[Insert a plot]
+
+The 'genres' have 27 different sub-types, 6 of them are rarely observed (Anime, Reality, Lifestyle, Adult, LGBT, Holiday). Therefore, during feature processing, these 6 genres were grouped together as one single sub-type - 'Other'. All the genre sub-types were encoded into dummy variables. We ended up having 22 dummy variables for movie genres. 
+
+_**Release year**_: The release year of movie varies through a wide range (1916-2017). Considering the popularity of a video usually decays over time, the release_year were bucketed based on the release_year percentiles. 
+
+After the feature engineering step, the feature space holded 4226 observations and 58 features in total, and with no null data. The dataset was scaled using standard scaler before training. 
+
+### Model Training and Evaluation 
+The metric to predict (cumulative time viewed by audiences per day) is continuous, so regularized linear models (LASSO linear regression, Ridge linear regression) and non-linear model (random forest regression) were implemented and evalualted. 5 models were compared using coefficient R^2, mean squared error (MSE) and root mean squared error (RMSE). 
+
+A majority of the effort was to inrease the model performance. The baseline model (LASSO linear regression) only generated R^2 score of 0.36457853303. 
+
+Random forest tree regressor generates the best prediction accurarcy (R^2 score of 0.50839320352), with best parameters n_estimators=14 and max_depth=55. 
+
+### Business Insights and Discussion
+
+
 
 
 
