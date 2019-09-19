@@ -34,9 +34,23 @@ Star_cateogry	:	A score to measure how popular the actor/actress are associated 
 Main Challenges and Investigations
 ----------------------------------
 ### Handling of Missing Data
-One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data, and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. 
+One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data, and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. There are 3242 samples have at least one missing data.
 
-There are two types of missing data: _*informative* and _*non-informative*. The first category 
+There are two common types of missing data: _**informative**_ and _**non-informative**_. The first category is produced by random data loss; in this case, the observations with missing values are no different from the ones with complete data. As for _informative_ missing data, it telss you something about your observation. A simple example is a customer record with a missing subscription cancellation date meaning that this customer's subscription has not been cancelled so far. 
+
+Ways of dealing with missing data are: <br/>
+1) Elimination from analysis; 
+2) Imputation (e.g. mean, median or mode, last observation carried forward, ); 
+3) Model/reason-based imputation (e.g. k-NN) 
+
+We usually don't want to fill in informative missing data with a mean or a median because the high majority of missing data in tech companies come from the fact that the user has chosen not to provide information: by not filling out profile, or by changing privacy settings, or deleting cookies. That is cruicial information for predictive model that we would lose, if we were to replace the missing values with predicted values. In this case, we may want to generate a seperate feature for them (Missing = Y/N), as an indicator of whether user chose to tell us the information. 
+
+Though the above discussion, I assume the missing data in this project is non-informative and for all 6 features with missing data, their corresponding mean values were imputated to replace missing entries. 
+
+### Feature Engineering 
+
+
+
 
 
 
