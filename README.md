@@ -78,13 +78,13 @@ The feature importance were extracted from the best RF model.
 <img src="The%20Golden%20Triangle.PNG" width="700">
 </p>
 
-If we assume that the movies that are closer to the golden triangle have a better chance of being clicked/watched by users, it is not hard to understand that the position of a movie will largely impact the performance of the movie on the platform. So if the company have picked movies to promote, the position of those movies shown on the webpage is something cruicial to think about. The optimized positions of movies can be tested via A/B testing. 
+  If we assume that the movies that are closer to the golden triangle have a better chance of being clicked/watched by users, it is not   hard to understand that the position of a movie will largely impact the performance of the movie on the platform. So if the company     have picked movies to promote, the position of those movies shown on the webpage is something cruicial to think about. The optimized     positions of movies can be tested via A/B testing. 
 
 2) The third strong predictor is 'imdb_votes'. This is expected and straight-forward as votes reflect the popularity of a movie and the more popular the movie is, the better performance one can expect for the movie. 
 
 3) Besides the strong predictors, I found that 'release year' is a weak predictor, surprisingly. Since the popularity of a movie decays over time, movies that were released in recent years were expected to perform better than old movies. However, the results indicated that the movie performace had no strong relationship with release year. 
 
-From business standpoint, the copyrights of new movies often cost more than old movies. Experiments can be designed to test whether recommending more new movies generate statistically significant different revenue than recommending more old movies. If the experiment yields non-statistically significant result, the company can consider buying more old movies instead of spending too much money on buying new movies. The business can be better optimized by reducing cost without hurting user engagement. 
+   From business standpoint, the copyrights of new movies often cost more than old movies. Experiments can be designed to test whether      recommending more new movies generate statistically significant different revenue than recommending more old movies. If the              experiment yields non-statistically significant result, the company can consider buying more old movies instead of spending too much    money on buying new movies. The business can be better optimized by reducing cost without hurting user engagement. 
 
 
 
