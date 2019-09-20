@@ -34,7 +34,7 @@ Star_cateogry	:	A score to measure how popular the actor/actress are associated 
 II. Main Challenges and Investigations
 ----------------------------------
 ### Handling of Missing Data
-One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data, and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. There are 3242 samples have at least one missing data.
+One of the main challenges I had during this project is dealing with missing values. Among the 10 numerical features, I found that 4 features (budget, boxoffice, metacritic_score, star_category) have more than 25% missing data (shown as '0', which is not possible in reality), and 2 features (imdb_votes, imdb_rating) have less than 10% of missing data. There are 3242 samples have at least one missing data.
 
 There are two common types of missing data: _**informative**_ and _**non-informative**_. The first category is produced by random data loss; in this case, the observations with missing values are no different from the ones with complete data. As for _informative_ missing data, it telss you something about your observation. A simple example is a customer record with a missing subscription cancellation date meaning that this customer's subscription has not been cancelled so far. 
 
