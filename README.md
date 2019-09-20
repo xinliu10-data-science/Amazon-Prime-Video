@@ -53,7 +53,7 @@ Two categorical features caught my attention: _**genres**_ and _**release_year**
 _**Genres**_: In the original 'genres' column, some movies have more than one genre listed, separated by comma. First thing I did was splitting the genres and plotted the number of movies belong to each individual genre. This helped me understand the impact of each individual genre. 
  
 <p align="center">
-<img src="Genre.png" width="600">
+<img src="Genre.png" width="500">
 </p>
 
 The 'genres' have 27 different sub-types, 6 of them are rarely observed (Anime, Reality, Lifestyle, Adult, LGBT, Holiday). Therefore, during feature processing, these 6 genres were grouped together as one single sub-type - 'Other'. All the genre sub-types were encoded into dummy variables. We ended up having 22 dummy variables for movie genres. 
