@@ -29,7 +29,7 @@ Import_id	:	Content partners<br/>
 Metacritic Score	:	Metacritic score on IMDB page. Typically, the higher the better<br/>
 Star_cateogry	:	A score to measure how popular the actor/actress are associated with the movie<br/>
 
-Python code and analysis is under the same repository and can also be found here: [Amazon Prime Video.ipynb](https://www.google.com)
+Python code and analysis is under the same repository and can also be found here: [Amazon Prime Video.ipynb](https://github.com/xinliu10-data-science/Amazon-Prime-Video/blob/master/Amazon%20Prime%20Video.ipynb)
 
 
 II. Main Challenges and Investigations
